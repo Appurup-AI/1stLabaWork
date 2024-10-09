@@ -2,7 +2,7 @@
 ## Приложение
 Приложение, созданное на React Native Expo, использующее библиотеку react-navigation, реализующее две функци: переход между страницами и передача параметров.
 Для осуществления навигации используется библиотека react-navigation и ее компоненты NavigationContainer, createNativeStackNavigator, Stack.Navigator и Stack.Screen
-```
+``` JS
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -17,19 +17,19 @@ export default function App() {
 }
 ```
 ###### Для передачи параметров в HomeScreen определяется переменная 
-```
+``` JS
 const parameter = "Москалев Артём";
 ```
 ###### Чтобы в DetailsScreen принять через route
-```
+``` JS
 const { parameter } = route.params;
 ```
 ###### И отобразить в тексте
-```
+``` JS
 <Text>{parameter}</Text>
 ```
 ###### Проект собирается в apk файл с помощью команды
-```
+``` JS
 eas build -p android --profile preview
 ```
 ## И досутпен для скачивания по ссылке
