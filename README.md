@@ -1,8 +1,7 @@
 # 1stLabaWork
+## Приложение
 Приложение, созданное на React Native Expo, использующее библиотеку react-navigation, реализующее две функци: переход между страницами и передача параметров.
 Для осуществления навигации используется библиотека react-navigation и ее компоненты NavigationContainer, createNativeStackNavigator, Stack.Navigator и Stack.Screen
-
-
 ```
 const Stack = createNativeStackNavigator();
 
@@ -17,22 +16,21 @@ export default function App() {
   );
 }
 ```
-
-Для передачи параметров в HomeScreen определяется переменная 
+###### Для передачи параметров в HomeScreen определяется переменная 
 ```
 const parameter = "Москалев Артём";
 ```
-Чтобы в DetailsScreen принять через route
+###### Чтобы в DetailsScreen принять через route
 ```
 const { parameter } = route.params;
 ```
-И отобразить в тексте
+###### И отобразить в тексте
 ```
 <Text>{parameter}</Text>
 ```
-Проект собирается в apk файл с помощью команды
+###### Проект собирается в apk файл с помощью команды
 ```
 eas build -p android --profile preview
 ```
-И досутпен для скачивания по ссылке 
+## И досутпен для скачивания по ссылке
 https://expo.dev/accounts/appurupai/projects/ReactTest/builds/bdd5ab4b-3541-46b7-9109-01cf07ff3188
